@@ -6,10 +6,26 @@
 
 html,body{height: 100%;}
 
+@font-face{
+	font-family: "Lato";
+	src: url('../fonts/Lato-Light.ttf');
+}
+
 /*=============================HEADER=============================*/
 .header{
 	height: 170px;
-	background: #eb5e28;}
+	background: #eb5e28;
+	color: white;}
+
+.content_header{
+	min-width: 200px;
+	height: 100%;
+	margin: 0 auto;
+	background: none;}
+.content_header hgroup{
+	display: none;
+	position: absolute;
+	margin-left: 80px;}
 
 .logo{
 	position: relative;
@@ -30,3 +46,14 @@ html,body{height: 100%;}
 
 /*=============================FOOTER=============================*/
 .footer{}
+
+
+/*=============================BREAKPOINTS=============================*/
+@media screen and (min-width: 768px){
+	.content_header{max-width: 768px;}
+	.content_header hgroup{display: block;}
+}
+
+@media screen and (min-width: 900px){
+	.content_header{max-width: 900px;}
+}
