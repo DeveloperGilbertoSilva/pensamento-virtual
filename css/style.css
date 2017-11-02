@@ -7,7 +7,23 @@
 html,body{height: 100%;}
 
 /*=============================HEADER=============================*/
-.header{}
+.header{
+	height: 170px;
+	background: #eb5e28;}
+
+.logo{
+	position: relative;
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	top: 10px;
+	border-radius: 90px;
+	overflow: hidden;
+	background: white;}
+.logo img{
+	position: relative;
+	right: 5px;
+	top: 5px;}
 
 /*=============================SECTION=============================*/
 .section{}
