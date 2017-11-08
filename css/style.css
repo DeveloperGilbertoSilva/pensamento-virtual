@@ -13,13 +13,15 @@ html,body{height: 100%;}
 
 .button{outline: none;}
 
+#menu_esquerda{display: none;}
+
 /*=============================HEADER=============================*/
 .header{
 	height: 70px;
 	background: #eb5e28;
 	color: white;}
 
-#btn_open_menu{
+#btn_open_menu,#btn_open_menu_lateral{
 	position: absolute;
 	display: block;
 	width: 40px;
@@ -28,10 +30,11 @@ html,body{height: 100%;}
 	top: 15px;
 	left: 10px;
 	border-radius: 40px;
-	border: none;
+	border: 2px solid white;
+	transition: 0.1s;
 	background: none;
 	font-size: 1.5em;}
-
+#btn_open_menu_lateral{display: none;}
 
 .content_header{
 	min-width: 200px;
@@ -74,6 +77,23 @@ html,body{height: 100%;}
 		margin-left: 60px;
 		margin-top: 20px;
 		font-family: "Lato";
-		font-size: 1.3em;
+		font-size: 1.3em;}
+
+	#btn_open_menu_lateral{
+		display: block;
+		border: none;}
+	#btn_open_menu_lateral:hover{border: 2px solid white;}	
+	#btn_open_menu{display: none;}	
+
+/*===========MENU LATERAL===========*/
+	#menu_esquerda{
+		display: none;
+		position: absolute;
+		width: 250px;
+		height: 100%;
+		z-index: 2;
+		background: #252422;
+		border: 3px solid;
+		border-color: transparent #ccc transparent transparent;
 	}
 }
