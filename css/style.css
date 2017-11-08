@@ -15,20 +15,20 @@ html,body{height: 100%;}
 
 /*=============================HEADER=============================*/
 .header{
-	height: 170px;
+	height: 70px;
 	background: #eb5e28;
 	color: white;}
 
 #btn_open_menu{
 	position: absolute;
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	float: left;
-	top: 30px;
+	top: 15px;
 	left: 10px;
 	border-radius: 40px;
-	border: 2px solid white;
+	border: none;
 	background: none;
 	font-size: 1.5em;}
 
@@ -38,23 +38,25 @@ html,body{height: 100%;}
 	height: 100%;
 	margin: 0 auto;
 	background: none;}
-.content_header hgroup{display: none;}
+.content_header span{display: none;}
 
 .logo{
 	position: relative;
-	width: 90px;
-	height: 90px;
+	width: 60px;
+	height: 60px;
 	margin: 0 auto;
-	top: 10px;
-	border-radius: 90px;
+	top: 5px;
+	border: 3px solid white;
+	border-radius: 60px;
 	overflow: hidden;
-	background: white;}
+	background: url('../img/header/logo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0%;}
 .logo img{
 	position: relative;
 	right: 5px;
 	top: 5px;}
-
-.container_menu_bar{display: none;}
 
 /*=============================SECTION=============================*/
 .section{}
@@ -65,62 +67,13 @@ html,body{height: 100%;}
 
 /*=============================BREAKPOINTS=============================*/
 @media screen and (min-width: 768px){
-	#btn_open_menu{display: none;}
-
-	.content_header{max-width: 768px;}
-	.content_header hgroup{
+	.content_header{max-width: 500px;}
+	.content_header span{
 		display: block;
 		position: absolute;
-		margin-left: 20px;}
-
-	.container_menu_bar{
-		position: absolute;
-		display: block;
-		width: 730px;
-		height: 40px;
-		left: 50%;
-		bottom: 0;
-		margin-left: -365px;
-		background: none;}
-	.container_menu_bar .nav_menu_bar .ul_menu_bar{
-		display: block;
-		width: 730px;
-		height: 40px;
-		background: none;}	
-	.container_menu_bar .nav_menu_bar .ul_menu_bar li{
-		display: inline-block;
-		position: relative;
-		float: left;
-		width: 116px;
-		height: 40px;
-		margin-left: 5px;
-		background: none;}
-	.container_menu_bar .nav_menu_bar .ul_menu_bar li:nth-child(3){left: -5px;background: none;}
-	.container_menu_bar .nav_menu_bar .ul_menu_bar li:nth-child(4){left: -15px;background: none;}
-	.container_menu_bar .nav_menu_bar .ul_menu_bar li:nth-child(5){left: 15px;background: none;}
-
-	.container_menu_bar .nav_menu_bar .ul_menu_bar li i{
-		position: relative;
-		float: left;
-		width: 30px;
-		height: 30px;
-		top: 5px;
-		padding: 5px 0px;
-		border-radius: 30px;
-		border: 2px solid white;
-		background: none;
-		text-align: center;
-		font-size: 1.2em;}
-	.container_menu_bar .nav_menu_bar .ul_menu_bar li:nth-child(1) i{font-size: 1.1em;}
-	.container_menu_bar .nav_menu_bar .ul_menu_bar li:nth-child(4) i{left: 0px;}
-
-	.container_menu_bar .nav_menu_bar .ul_menu_bar li a{
-		position: relative;
-		float: left;
-		top: 10px;
-		left: 5px;
-		text-decoration: none;
-		color: white;
+		margin-left: 60px;
+		margin-top: 20px;
+		font-family: "Lato";
+		font-size: 1.3em;
 	}
-	
 }
