@@ -10,9 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
 
 <!--=============================JAVASCRIPT=============================-->
 	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
 	<link rel="shortcut icon" href="img/logo_small.png">
@@ -24,8 +26,76 @@
 <div class="container-fluid">
 	<!--=============================MENU LATERAL=============================-->
 	<div class="row">
-		<aside id="menu_esquerda">
+		<aside id="container_menu_esquerda">
+			<div class="header_menu_lateral">
+				<i class="fa fa-question-circle"></i><br/>
+				Sobre o que pensar hoje?
+			</div>
+
+			<div class="section_menu_lateral">
+				<nav class="menu_esquerda">
+					<ul type="none">
+						<li>
+							<a href="#">
+								<i class="fa fa-newspaper-o"></i>
+								Notícias
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa fa-commenting-o"></i>
+								Opnião
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa fa-gamepad"></i>
+								Games
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa fa-question"></i>
+								Curiosidades
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa fa-info-circle"></i>
+								Sobre
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 			
+			<div class="footer_menu_lateral">
+				<div class="content_footer_menu_lateral">
+					<br/>
+					<h4>Entre em contato:</h4>
+					<span>
+						<i class="fa fa-envelope"></i><br/>
+						 contatopensamentovirtual
+					</span>
+					<br/><br/><br/>
+					<span>Gmail (@gmail.com)</span><br/>
+					e<br/>
+					<span>Outlook (@outlook.com.br)</span><br/>
+
+					<br/><br/><br/>
+					<h4>Acesse: </h4>
+					<div class="social_icons">
+						<i class="fa fa-facebook" title="Facebook"></i>
+						&nbsp;&nbsp;&nbsp;
+						<i class="fa fa-instagram" title="Instagram"></i>
+					</div>
+				</div>  
+			</div>
+
 		</aside>
 	</div>
 	<div class="row">
@@ -57,6 +127,15 @@
 
 <!--=============================JAVASCRIPT=============================-->
 <script type="text/javascript" src="js/script.js"></script>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $("#container_menu_esquerda").mCustomScrollbar({
+            	theme:"light-thin"
+            });
+        });
+    })(jQuery);
+</script>
 
 </body>
 
